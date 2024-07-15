@@ -73,19 +73,19 @@ High performance, ultra-low power ARM Cortex-M0+ 32-bit based architecture core
 
         <memory    name="Main_Flash" access="rx"  start="0x10040000" size="0x00080000" startup="1" default="1" />
 
-        <memory    name="SRAM0"      access="rwx" start="0x20000000" size="0x00004000" default="1" init="0"/>
-        <memory    name="SRAM1"      access="rwx" start="0x20040000" size="0x00004000" default="1" init="0"/>
-        <memory    name="SRAM2"      access="rwx" start="0x20080000" size="0x00004000" default="1" init="0"/>
-        <memory    name="SRAM3"      access="rwx" start="0x200C0000" size="0x00004000" default="1" init="0"/>
+        <memory    name="SRAM0"      access="rwx" start="0x20000018" size="0x00003FE8" default="0" init="0"/>
+        <memory    name="SRAM1"      access="rwx" start="0x20004000" size="0x00004000" default="1" init="0"/>
+        <memory    name="SRAM2"      access="rwx" start="0x20008000" size="0x00004000" default="1" init="0"/>
+        <memory    name="SRAM3"      access="rwx" start="0x2000C000" size="0x00004000" default="1" init="0"/>
 
         <!-- ################################### 512 KB ################################### -->
         <!-- *************************  Device 'STM32WB09KEVxT'  ************************* -->
-        <device Dname="STM32WB09KEVxT">
+        <device Dname="STM32WB09KEVx">
           <feature type="QFN" n="32"/>
         </device>
 
         <!-- *************************  Device 'STM32WB09TEFxT'  ************************* -->
-        <device Dname="STM32WB09TEFxT">
+        <device Dname="STM32WB09TEFx">
           <feature type="CSP" n="36"/>
         </device>
       </subFamily>
@@ -94,10 +94,10 @@ High performance, ultra-low power ARM Cortex-M0+ 32-bit based architecture core
       <subFamily DsubFamily="STM32WB07">
         <debug svd="CMSIS/SVD/STM32WB07.svd"/>
         <compile define="STM32WB07xx"/>
-<!--
-        <book name="https://www.st.com/resource/en/reference_manual/rm0505-stm32wb09xe-ultralow-power-wireless-32bit-mcu-armbased-cortexm0-with-bluetooth-low-energy-and-24-ghz-radio-solution-stmicroelectronics.pdf" title="STM32WB09xE Reference Manual"/>
-        <book name="https://www.st.com/resource/en/datasheet/stm32wb09ke.pdf" title="STM32WB09xE Data Sheet"/>
--->
+
+        <book name="https://www.st.com/resource/en/reference_manual/rm0530--stm32wb07xc-and-stm32wb06xc-ultralow-power-wireless-32bit-mcus-armbased-cortexm0-with-bluetooth-low-energy-and-24-ghz-radio-solution-stmicroelectronics.pdf" title="STM32WB07xC and STM32WB06xC Reference Manual"/>
+        <book name="https://www.st.com/resource/en/datasheet/stm32wb07cc.pdf" title="STM32WB06xC STM32WB07xC Datasheet"/>
+
 <!--
         <debugvars configfile="CMSIS/Debug/STM32WB09x.dbgconf" version="1.0.0">
           // Debug Access Variables, can be modified by user via copies of DBGCONF files as created by uVision. Also see sub-family level.
@@ -109,23 +109,23 @@ High performance, ultra-low power ARM Cortex-M0+ 32-bit based architecture core
         <memory    name="Main_Flash" access="rx"  start="0x10040000" size="0x00040000" startup="1" default="1" />
 
         <memory    name="SRAM0"      access="rwx" start="0x20000018" size="0x00003FE8" default="0" init="0"/>
-        <memory    name="SRAM1"      access="rwx" start="0x20040000" size="0x00004000" default="1" init="0"/>
-        <memory    name="SRAM2"      access="rwx" start="0x20080000" size="0x00004000" default="1" init="0"/>
-        <memory    name="SRAM3"      access="rwx" start="0x200C0000" size="0x00004000" default="1" init="0"/>
+        <memory    name="SRAM1"      access="rwx" start="0x20004000" size="0x00004000" default="1" init="0"/>
+        <memory    name="SRAM2"      access="rwx" start="0x20008000" size="0x00004000" default="1" init="0"/>
+        <memory    name="SRAM3"      access="rwx" start="0x2000C000" size="0x00004000" default="1" init="0"/>
 
         <!-- ################################### 256 KB ################################### -->
         <!-- *************************  Device 'STM32WB07CCVxT'  ************************* -->
-        <device Dname="STM32WB07CCVxT">
+        <device Dname="STM32WB07CCVx">
           <feature type="QFN" n="48"/>
         </device>
 
          <!-- *************************  Device 'STM32WB07KCVxT'  ************************* -->
-        <device Dname="STM32WB07KCVxT">
+        <device Dname="STM32WB07KCVx">
           <feature type="QFN" n="32"/>
         </device>
 
          <!-- *************************  Device 'STM32WB07CCFxT'  ************************* -->
-        <device Dname="STM32WB07CCFxT">
+        <device Dname="STM32WB07CCFx">
           <feature type="CSP" n="49"/>
         </device>
       </subFamily>
@@ -134,10 +134,10 @@ High performance, ultra-low power ARM Cortex-M0+ 32-bit based architecture core
       <subFamily DsubFamily="STM32WB06">
         <debug svd="CMSIS/SVD/STM32WB06.svd"/>
         <compile define="STM32WB06xx"/>
-<!--
-        <book name="https://www.st.com/resource/en/reference_manual/rm0505-stm32wb09xe-ultralow-power-wireless-32bit-mcu-armbased-cortexm0-with-bluetooth-low-energy-and-24-ghz-radio-solution-stmicroelectronics.pdf" title="STM32WB09xE Reference Manual"/>
-        <book name="https://www.st.com/resource/en/datasheet/stm32wb09ke.pdf" title="STM32WB09xE Data Sheet"/>
--->
+
+        <book name="https://www.st.com/resource/en/reference_manual/rm0530--stm32wb07xc-and-stm32wb06xc-ultralow-power-wireless-32bit-mcus-armbased-cortexm0-with-bluetooth-low-energy-and-24-ghz-radio-solution-stmicroelectronics.pdf" title="STM32WB07xC and STM32WB06xC Reference Manual"/>
+        <book name="https://www.st.com/resource/en/datasheet/stm32wb07cc.pdf" title="STM32WB06xC STM32WB07xC Datasheet"/>
+
 <!--
         <debugvars configfile="CMSIS/Debug/STM32WB09x.dbgconf" version="1.0.0">
           // Debug Access Variables, can be modified by user via copies of DBGCONF files as created by uVision. Also see sub-family level.
@@ -148,26 +148,24 @@ High performance, ultra-low power ARM Cortex-M0+ 32-bit based architecture core
 
         <memory    name="Main_Flash" access="rx"  start="0x10040000" size="0x00040000" startup="1" default="1" />
 
-        <memory    name="SRAM0"      access="rwx" start="0x20000000" size="0x00004000" default="1" init="0"/>
-        <memory    name="SRAM1"      access="rwx" start="0x20040000" size="0x00004000" default="1" init="0"/>
-        <memory    name="SRAM2"      access="rwx" start="0x20080000" size="0x00004000" default="1" init="0"/>
-        <memory    name="SRAM3"      access="rwx" start="0x200C0000" size="0x00004000" default="1" init="0"/>
+        <memory    name="SRAM0"      access="rwx" start="0x20000018" size="0x00003FE8" default="0" init="0"/>
+        <memory    name="SRAM1"      access="rwx" start="0x20004000" size="0x00004000" default="1" init="0"/>
 
         <!-- ################################### 256 KB ################################### -->
         <!-- *************************  Device 'STM32WB06CCVxT'  ************************* -->
-        <device Dname="STM32WB06CCVxT">
+        <device Dname="STM32WB06CCVx">
           <memory name="SRAM1"      access="rwx"              start="0x20000000" size="0x00008000" init="0"    default="1" />
           <feature type="QFN" n="48"/>
         </device>
 
          <!-- *************************  Device 'STM32WB06KCVxT'  ************************* -->
-        <device Dname="STM32WB06KCVxT">
+        <device Dname="STM32WB06KCVx">
           <memory name="SRAM1"      access="rwx"              start="0x20000000" size="0x0008000" init="0"    default="1" />
           <feature type="QFN" n="32"/>
         </device>
 
          <!-- *************************  Device 'STM32WB06CCFxT'  ************************* -->
-        <device Dname="STM32WB06CCFxT">
+        <device Dname="STM32WB06CCFx">
           <memory name="SRAM1"      access="rwx"              start="0x20000000" size="0x0008000" init="0"    default="1" />
           <feature type="CSP" n="49"/>
         </device>
@@ -177,10 +175,10 @@ High performance, ultra-low power ARM Cortex-M0+ 32-bit based architecture core
       <subFamily DsubFamily="STM32WB05">
         <debug svd="CMSIS/SVD/STM32WB05.svd"/>
         <compile define="STM32WB05xx"/>
-<!--
-        <book name="https://www.st.com/resource/en/reference_manual/rm0505-stm32wb09xe-ultralow-power-wireless-32bit-mcu-armbased-cortexm0-with-bluetooth-low-energy-and-24-ghz-radio-solution-stmicroelectronics.pdf" title="STM32WB09xE Reference Manual"/>
-        <book name="https://www.st.com/resource/en/datasheet/stm32wb09ke.pdf" title="STM32WB09xE Data Sheet"/>
--->
+
+        <book name="https://www.st.com/resource/en/reference_manual/rm0529-stm32wb05xz-ultralow-power-wireless-32bit-mcu-armbased-cortexm0-with-bluetooth-low-energy-and-24-ghz-radio-solution-stmicroelectronics.pdf" title="STM32WB05xZ Reference Manual"/>
+        <book name="https://www.st.com/resource/en/datasheet/stm32wb05kz.pdf" title="STM32WB05xZ Datasheet"/>
+
 <!--
         <debugvars configfile="CMSIS/Debug/STM32WB09x.dbgconf" version="1.0.0">
           // Debug Access Variables, can be modified by user via copies of DBGCONF files as created by uVision. Also see sub-family level.
@@ -191,20 +189,18 @@ High performance, ultra-low power ARM Cortex-M0+ 32-bit based architecture core
 
         <memory    name="Main_Flash" access="rx"  start="0x10040000" size="0x00030000" startup="1" default="1" />
 
-        <memory    name="SRAM0"      access="rwx" start="0x20000000" size="0x00004000" default="1" init="0"/>
-        <memory    name="SRAM1"      access="rwx" start="0x20040000" size="0x00004000" default="1" init="0"/>
-        <memory    name="SRAM2"      access="rwx" start="0x20080000" size="0x00004000" default="1" init="0"/>
-        <memory    name="SRAM3"      access="rwx" start="0x200C0000" size="0x00004000" default="1" init="0"/>
+        <memory    name="SRAM0"      access="rwx" start="0x20000018" size="0x00002FE8" default="0" init="0"/>
+        <memory    name="SRAM1"      access="rwx" start="0x20003000" size="0x00003000" default="1" init="0"/>
 
         <!-- ################################### 192 KB ################################### -->
         <!-- *************************  Device 'STM32WB05KZVxT'  ************************* -->
-        <device Dname="STM32WB05KZVxT">
+        <device Dname="STM32WB05KZVx">
           <memory name="SRAM1"      access="rwx"              start="0x20000000" size="0x00006000" init="0"    default="1" />
           <feature type="QFN" n="32"/>
         </device>
 
          <!-- *************************  Device 'STM32WB05TZFxT'  ************************* -->
-        <device Dname="STM32WB05TZFxT">
+        <device Dname="STM32WB05TZFx">
           <memory name="SRAM1"      access="rwx"              start="0x20000000" size="0x00006000" init="0"    default="1" />
           <feature type="CSP" n="36"/>
         </device>
@@ -235,7 +231,7 @@ High performance, ultra-low power ARM Cortex-M0+ 32-bit based architecture core
       <description>Configuration via STM32CubeMX</description>
       <RTE_Components_h>
         #define RTE_DEVICE_CUBE_MX
-        #define CMSIS_device_header "stm32c0xx.h"
+        #define CMSIS_device_header "stm32wb0x.h"
       </RTE_Components_h>
       <files>
         <file category="doc" name="https://github.com/Open-CMSIS-Pack/cmsis-toolbox/blob/main/docs/CubeMX.md"/>
