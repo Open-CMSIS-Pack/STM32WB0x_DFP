@@ -18,7 +18,7 @@ Copyright (c) 2024 STMicroelectronics.
 -->
 <device xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1" xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32WB09</name>
-  <version>0.4</version>
+  <version>1.0</version>
   <description>STM32WB09</description>
   <cpu>
     <name>CM0+</name>
@@ -7913,17 +7913,11 @@ controller</description>
               <description>Macro commands for flash operations (may require DATA0...DATA3 to be set):
 0x11 : ERASE        
 0x22 : MASSERASE    
-0x33 : WRITE        
-0x44 : MASSWRITE    
-0x55 : MASSREAD     
-0x66 : IFRERASE     
-0x77 : IFRWRITE     
-0x88 : IFRMASSWRITE 
-0x99 : IFRMASSREAD  
+0x33 : WRITE          
+0x55 : MASSREAD              
 0xAA : SLEEP        
 0xBB : WAKEUP       
 0xCC : BURSTWRITE   
-0xDD : IFRBURSTWRITE
 0xEE : OTPWRITE     
 0xFF : KEYWRITE</description>
               <bitOffset>0</bitOffset>
@@ -7942,15 +7936,6 @@ controller</description>
           <resetValue>0x00000010</resetValue>
           <fields>
             <field>
-              <name>LONGACCESS</name>
-              <description>Additional wait-state for flash read access:
-0 : no latency added
-1 : 1 clock cycle latency added</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
               <name>REMAP</name>
               <description>CPU access routing (it supersedes PREMAP configuration):
 0 : FLASH memory addressed
@@ -7965,15 +7950,6 @@ controller</description>
 0 : burst write allowed
 1 : burst write forbidden</description>
               <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>PREMAP</name>
-              <description>CPU access routing (it can only be set; reset only allowed by POR/PAD reset)
-0 : IFR memory addressed
-1 : MAIN flash memory addressed</description>
-              <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
@@ -10651,33 +10627,12 @@ When writing a 1, the value remains until it is seen by RNG core clock domain af
               </enumeratedValues>
             </field>
             <field>
-              <name>CLKDIV_15_0</name>
+              <name>CLKDIV</name>
               <description>Sampling Clock Enable Divider.
 CLKDIV[15:0] control the sampling clock enable divider, dividing by a factor equal to CLKDIV[15:0] + 1, values being in the range of 1 to 65536.</description>
               <bitOffset>8</bitOffset>
               <bitWidth>16</bitWidth>
               <access>read-write</access>
-            </field>
-            <field>
-              <name>BP_POSTP</name>
-              <description>Bypass of Post-Processing. Can be used for getting the random raw values from the random sources. Available only in test mode for analog characterization where tst_bypass_ana_i input of the IP is set to 1.
-</description>
-              <bitOffset>24</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>B_0x0</name>
-                  <description>Post processing is used
-</description>
-                  <value>0x0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x1</name>
-                  <description>Post processing is bypassed</description>
-                  <value>0x1</value>
-                </enumeratedValue>
-              </enumeratedValues>
             </field>
           </fields>
         </register>

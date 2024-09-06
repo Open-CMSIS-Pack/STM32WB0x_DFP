@@ -18,7 +18,7 @@ Copyright (c) 2024 STMicroelectronics.
 -->
 <device xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1" xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32WB06</name>
-  <version>0.3</version>
+  <version>1.0</version>
   <description>STM32WB06</description>
   <cpu>
     <name>CM0+</name>
@@ -20292,17 +20292,11 @@ controller</description>
               <description>Macro commands for flash operations (may require DATA0...DATA3 to be set):
 - 0x11 : ERASE        
 - 0x22 : MASSERASE    
-- 0x33 : WRITE        
-- 0x44 : MASSWRITE    
-- 0x55 : MASSREAD     
-- 0x66 : IFRERASE     
-- 0x77 : IFRWRITE     
-- 0x88 : IFRMASSWRITE 
-- 0x99 : IFRMASSREAD  
+- 0x33 : WRITE           
+- 0x55 : MASSREAD               
 - 0xAA : SLEEP        
 - 0xBB : WAKEUP       
 - 0xCC : BURSTWRITE   
-- 0xDD : IFRBURSTWRITE
 - 0xEE : OTPWRITE     
 - 0xFF : KEYWRITE</description>
               <bitOffset>0</bitOffset>
