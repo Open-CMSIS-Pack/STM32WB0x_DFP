@@ -13,9 +13,8 @@
   </licenseSets>
 
   <releases>
-    <release version="1.0.0-dev" date="2024-07-16">
-      Ready for new CMSIS-Toolbox CubeMX integration
-      First Official release of STM32WB0x Device Family Pack
+    <release version="1.0.0" date="2024-09-25">
+      Initial publc release of STM32WB0x Device Family Pack
     </release>
     <release version="0.1.0" date="2023-11-12">
       Initial version of STM32WB0x Device Family Pack
