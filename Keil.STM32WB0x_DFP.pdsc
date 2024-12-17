@@ -8,11 +8,16 @@
   <license>LICENSE</license>
   <licenseSets>
     <licenseSet id="all" default="true" gating="true">
-      <license name="LICENSE" title="Apache 2.0 open-source license" spdx="Apache-2.0"/>
+      <license title="Apache-2.0 License for CMSIS add-ons"                  name="LICENSE"   spdx="Apache-2.0"/>
     </licenseSet>
   </licenseSets>
 
   <releases>
+    <release version="1.0.1-dev">
+      Active development...
+      Updated documentation
+      Updated template
+    </release>
     <release version="1.0.0" date="2024-09-25">
       Initial public release of STM32WB0x Device Family Pack
     </release>
@@ -203,6 +208,7 @@ High performance, ultra-low power ARM Cortex-M0+ 32-bit based architecture core
       </subFamily>
 
     </family>
+
   </devices>
 
   <conditions>
@@ -242,5 +248,4 @@ High performance, ultra-low power ARM Cortex-M0+ 32-bit based architecture core
     </template>
 
   </csolution>
-
 </package>
