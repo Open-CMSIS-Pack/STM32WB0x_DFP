@@ -13,16 +13,8 @@
   </licenseSets>
 
   <releases>
-    <release version="1.0.1-dev">
+    <release version="1.0.2-dev">
       Active development...
-
-      Package Description (pdsc):
-      - Updated memories regions
-      Updated documentation
-      Updated template
-    </release>
-    <release version="1.0.0" date="2024-09-25">
-      Initial public release of STM32WB0x Device Family Pack
     </release>
   </releases>
 
