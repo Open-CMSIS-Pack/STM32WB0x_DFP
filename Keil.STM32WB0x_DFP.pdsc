@@ -13,8 +13,9 @@
   </licenseSets>
 
   <releases>
-    <release version="1.0.2-dev">
+    <release version="1.0.3-dev">
       Active development...
+      Updated documentation references
     </release>
   </releases>
 
@@ -61,7 +62,7 @@ High performance, ultra-low power ARM Cortex-M0+ 32-bit based architecture core
 
 <!--
         <debugvars configfile="CMSIS/Debug/STM32WB09x.dbgconf" version="1.0.0">
-          // Debug Access Variables, can be modified by user via copies of DBGCONF files as created by uVision. Also see sub-family level.
+          // Default values for variables in debug sequences are configured with a *.dbgconf file in the user project
         </debugvars>
 -->
 
@@ -95,7 +96,7 @@ High performance, ultra-low power ARM Cortex-M0+ 32-bit based architecture core
 
 <!--
         <debugvars configfile="CMSIS/Debug/STM32WB09x.dbgconf" version="1.0.0">
-          // Debug Access Variables, can be modified by user via copies of DBGCONF files as created by uVision. Also see sub-family level.
+          // Default values for variables in debug sequences are configured with a *.dbgconf file in the user project
         </debugvars>
 -->
 
@@ -134,7 +135,7 @@ High performance, ultra-low power ARM Cortex-M0+ 32-bit based architecture core
 
 <!--
         <debugvars configfile="CMSIS/Debug/STM32WB09x.dbgconf" version="1.0.0">
-          // Debug Access Variables, can be modified by user via copies of DBGCONF files as created by uVision. Also see sub-family level.
+          // Default values for variables in debug sequences are configured with a *.dbgconf file in the user project
         </debugvars>
 -->
 
@@ -174,7 +175,7 @@ High performance, ultra-low power ARM Cortex-M0+ 32-bit based architecture core
 
 <!--
         <debugvars configfile="CMSIS/Debug/STM32WB09x.dbgconf" version="1.0.0">
-          // Debug Access Variables, can be modified by user via copies of DBGCONF files as created by uVision. Also see sub-family level.
+          // Default values for variables in debug sequences are configured with a *.dbgconf file in the user project
         </debugvars>
 -->
 
@@ -227,7 +228,7 @@ High performance, ultra-low power ARM Cortex-M0+ 32-bit based architecture core
         #define CMSIS_device_header "stm32wb0x.h"
       </RTE_Components_h>
       <files>
-        <file category="doc" name="https://github.com/Open-CMSIS-Pack/cmsis-toolbox/blob/main/docs/CubeMX.md"/>
+        <file category="doc" name="https://open-cmsis-pack.github.io/cmsis-toolbox/CubeMX"/>
       </files>
     </component>
   </components>
