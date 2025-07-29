@@ -70,11 +70,17 @@ High performance, ultra-low power ARM Cortex-M0+ 32-bit based architecture core
 
         <!-- ################################### 512 KB ################################### -->
         <!-- *************************  Device 'STM32WB09KEVxT'  ************************* -->
+        <device Dname="STM32WB09KEVx">
+          <feature type="QFN" n="32"/>
+        </device>
         <device Dname="STM32WB09KEVxT">
           <feature type="QFN" n="32"/>
         </device>
 
         <!-- *************************  Device 'STM32WB09TEFxT'  ************************* -->
+        <device Dname="STM32WB09TEFx">
+          <feature type="CSP" n="36"/>
+        </device>
         <device Dname="STM32WB09TEFxT">
           <feature type="CSP" n="36"/>
         </device>
@@ -104,16 +110,25 @@ High performance, ultra-low power ARM Cortex-M0+ 32-bit based architecture core
 
         <!-- ################################### 256 KB ################################### -->
         <!-- *************************  Device 'STM32WB07CCVxT'  ************************* -->
+        <device Dname="STM32WB07CCVx">
+          <feature type="QFN" n="48"/>
+        </device>
         <device Dname="STM32WB07CCVxT">
           <feature type="QFN" n="48"/>
         </device>
 
          <!-- *************************  Device 'STM32WB07KCVxT'  ************************* -->
+        <device Dname="STM32WB07KCVx">
+          <feature type="QFN" n="32"/>
+        </device>
         <device Dname="STM32WB07KCVxT">
           <feature type="QFN" n="32"/>
         </device>
 
          <!-- *************************  Device 'STM32WB07CCFxT'  ************************* -->
+        <device Dname="STM32WB07CCFx">
+          <feature type="CSP" n="49"/>
+        </device>
         <device Dname="STM32WB07CCFxT">
           <feature type="CSP" n="49"/>
         </device>
@@ -141,23 +156,34 @@ High performance, ultra-low power ARM Cortex-M0+ 32-bit based architecture core
 
         <!-- ################################### 256 KB ################################### -->
         <!-- *************************  Device 'STM32WB06CCVxT'  ************************* -->
+        <device Dname="STM32WB06CCVx">
+          <memory name="SRAM1"       access="rwx" start="0x20000000" size="0x00008000" default="1"/>
+          <feature type="QFN" n="48"/>
+        </device>
         <device Dname="STM32WB06CCVxT">
           <memory name="SRAM1"       access="rwx" start="0x20000000" size="0x00008000" default="1"/>
           <feature type="QFN" n="48"/>
         </device>
 
          <!-- *************************  Device 'STM32WB06KCVxT'  ************************* -->
+        <device Dname="STM32WB06KCVx">
+          <memory name="SRAM1"       access="rwx" start="0x20000000" size="0x0008000"  default="1"/>
+          <feature type="QFN" n="32"/>
+        </device>
         <device Dname="STM32WB06KCVxT">
           <memory name="SRAM1"       access="rwx" start="0x20000000" size="0x0008000"  default="1"/>
           <feature type="QFN" n="32"/>
         </device>
 
          <!-- *************************  Device 'STM32WB06CCFxT'  ************************* -->
-        <device Dname="STM32WB06CCFxT">
+        <device Dname="STM32WB06CCFx">
           <memory name="SRAM1"       access="rwx" start="0x20000000" size="0x0008000"  default="1"/>
           <feature type="CSP" n="49"/>
         </device>
-      </subFamily>
+        <device Dname="STM32WB06CCFxT">
+          <memory name="SRAM1"       access="rwx" start="0x20000000" size="0x0008000"  default="1"/>
+          <feature type="CSP" n="49"/>
+        </device>      </subFamily>
 
       <!-- ************************  Subfamily 'STM32WB05'  ************************ -->
       <subFamily DsubFamily="STM32WB05">
@@ -181,12 +207,20 @@ High performance, ultra-low power ARM Cortex-M0+ 32-bit based architecture core
 
         <!-- ################################### 192 KB ################################### -->
         <!-- *************************  Device 'STM32WB05KZVxT'  ************************* -->
+        <device Dname="STM32WB05KZVx">
+          <memory name="SRAM1"       access="rwx" start="0x20000000" size="0x00006000" default="1"/>
+          <feature type="QFN" n="32"/>
+        </device>
         <device Dname="STM32WB05KZVxT">
           <memory name="SRAM1"       access="rwx" start="0x20000000" size="0x00006000" default="1"/>
           <feature type="QFN" n="32"/>
         </device>
 
          <!-- *************************  Device 'STM32WB05TZFxT'  ************************* -->
+        <device Dname="STM32WB05TZFx">
+          <memory name="SRAM1"       access="rwx" start="0x20000000" size="0x00006000" default="1"/>
+          <feature type="CSP" n="36"/>
+        </device>
         <device Dname="STM32WB05TZFxT">
           <memory name="SRAM1"       access="rwx" start="0x20000000" size="0x00006000" default="1"/>
           <feature type="CSP" n="36"/>
