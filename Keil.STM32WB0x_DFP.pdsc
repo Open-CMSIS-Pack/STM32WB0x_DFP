@@ -32,21 +32,12 @@
 
   <devices>
     <family Dfamily="STM32WB0 Series" Dvendor="STMicroelectronics:13">
-      <processor Dcore="Cortex-M0+" DcoreVersion="r0p1" Dclock="64000000" Dfpu="NO_FPU" Dmpu="NO_MPU" Dendian="Little-endian"/>
+      <processor Dcore="Cortex-M0+" DcoreVersion="r0p1" Dclock="64000000" Dfpu="NO_FPU" Dmpu="NO_MPU" Ddsp="NO_DSP" Dendian="Little-endian"/>
 
       <book name="https://developer.arm.com/documentation/dui0662/latest" title="Cortex-M0+ Generic User Guide"/>
 
       <description>
-High performance, ultra-low power ARM Cortex-M0+ 32-bit based architecture core
-- Upgradable BLE stack (stored in embedded Flash memory)
-- AES security co-processor
-- Low power modes
-- 32 MHz crystal oscillator
-- 64 MHz ring oscillator
-- 32768 kHz crystal oscillator
-- 32 kHz ring oscillator
-- Compliant with the following radio frequency regulations: ETSI EN 300 328, EN 300 440, FCC CFR47 Part 15, ARIB STD
-- Operating temperature range: -40 to 105 Celsius
+High performance and ultra-low power STM32WB0 MCUs with Arm Cortex-M0+ core, MPU, frequency up to 64 MHz.
       </description>
 
 <!--
