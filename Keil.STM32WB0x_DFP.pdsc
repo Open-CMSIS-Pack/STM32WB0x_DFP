@@ -16,6 +16,9 @@
     <release version="1.0.3-dev">
       Active development...
       Updated documentation references
+      Updateed Templates:
+      - Added DWARF-5 debug information
+      - Added generated output files
     </release>
   </releases>
 
